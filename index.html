@@ -1,0 +1,51 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Transparent LightDM Web Greeter</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <!-- My Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Bootstrap JS -->
+  <script src="libs/jquery-3.1.1.min.js"></script>
+  <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="header">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <!-- login dialog -->
+        <div id="login" class="panel panel-deault login-box">
+          <div class="panel-heading text-center">
+            <span class="pull-left">
+              <img data-greeter-config="logo" src="img/web/arch8015linux2.png" />
+            </span>
+            <span class="welcome" id="current_time" class="time text-center"></span>
+            <span id="hostname" class="pull-right"></span>
+          </div>
+          <div id="panelfix" class="panel-body panel-shadow">
+            <div class="panel-group" id="accordion">
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <div id="timewrap" class="panel-body panel-shadow time-panel text-center">
+                  <a id="trigger" data-toggle="collapse" data-parent="#accordion" href="#collapse">
+                    <span id="login-text" class="text-center">Login</span>
+                    <i class="fa fa-toggle-up"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- My JS -->
+  <script src="js/default.js"></script>
+</body>
+</html>

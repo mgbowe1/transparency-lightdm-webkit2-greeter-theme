@@ -1,0 +1,10 @@
+html, body {
+  background:url('../img/transparency-default.png');
+}
+.header {
+  height:10%;
+}
+#login {
+  opacity:0.75;
+  box-shadow: 2px 2px;
+}
