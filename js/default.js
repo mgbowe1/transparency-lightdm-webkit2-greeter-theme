@@ -22,4 +22,8 @@ function startTime() {
   document.getElementById("current_time").innerHTML = dw + ", " + dm + " " + mon + " " + h + ":" + min + ":" + s;
   var t = setTimeout(startTime, 500);
 }
-startTime();
+function loginThemeMain() {
+  startTime();
+  document.getElementById("hostname").innerHTML = lightdm.hostname;
+}
+loginThemeMain();

@@ -7,6 +7,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
   <!-- My Custom CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -31,12 +32,35 @@
           </div>
           <div id="panelfix" class="panel-body panel-shadow">
             <div class="panel-group" id="accordion">
-              <div id="collapseOne" class="panel-collapse collapse in">
-                <div id="timewrap" class="panel-body panel-shadow time-panel text-center">
-                  <a id="trigger" data-toggle="collapse" data-parent="#accordion" href="#collapse">
-                    <span id="login-text" class="text-center">Login</span>
-                    <i class="fa fa-toggle-up"></i>
-                  </a>
+              <div class="panel panel-default panel-shadow">
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div id="timewrap" class="panel-body panel-shadow time-panel text-center">
+                    <a id="trigger" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      <span id="login-text" class="text-center">Welcome</span>
+                      <i class="fa fa-toggle-up"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default panel-shadow panel-flow">
+                <!-- User Selection -->
+                <div id="collapseTwo" class="panel-collapse panel-shadow collapse">
+                  <div id="list-group" class="panel-body panel-shadow panel-wrap">
+                    <div class="user-wrap2">
+                      <div id="user-list2" class="list-group"></div>
+                      <a id="user-target2" class="user-toggle cancel_auth" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        <i class="fa fa-toggle-down" sytle="position:absolute;"></i>
+                      </a>
+                    </div>
+                    <div id="passwordArea" class="password">
+                      <div class="input-group">
+                        <input id="passwordField" title="input password" type="password" class="password form-control"/>
+                        <div class="input-group-btn">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -45,7 +69,10 @@
       </div>
     </div>
   </div>
-  <!-- My JS -->
+  <!-- Theme JS -->
+  <script src="js/ThemeUtils.js"></script>
+  <script src="js/bootstrap.js"></script> <!-- NOT actually the bootstrap library, bootstraps the greeter api -->
+  <script src="js/greeter.js"></script>
   <script src="js/default.js"></script>
 </body>
 </html>
